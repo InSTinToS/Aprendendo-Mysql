@@ -1,0 +1,44 @@
+/*
+  ? Inserir dados em uma coluna
+  ! columnsName é opcional se for adicionar dados em 
+    todas as colunas
+  INSERT INTO <tableName> (<columnsName>) VALUES (<setValues>)  
+*/
+
+INSERT INTO client 
+VALUES (01, 'Miguel', '01234567890', '2001-08-19', 01);
+
+/*Ou*/
+
+INSERT INTO client (
+  i_client_client,
+  s_name_client,
+  s_cpf_client,
+  d_birth_client,
+  i_type_client
+) VALUES (
+  01,
+  'Miguel',
+  '01234567890',
+  '2001-08-19',
+  01
+);
+
+
+/*
+  ? Inserir dados a uma tabela de outra tabela
+*/
+
+INSERT INTO client_aux (
+  i_client_client,
+  s_name_client,
+  s_cpf_client,
+  d_birth_client,
+  i_type_client
+) SELECT   
+  i_client_client,
+  s_name_client,
+  s_cpf_client,
+  d_birth_client,
+  i_type_client 
+FROM client;

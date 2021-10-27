@@ -1,0 +1,8 @@
+/*
+  ! database === schema
+  
+  ? Criar database
+  CREATE DATABASE <setDatabaseName>;
+*/
+
+CREATE DATABASE cfbcursos;

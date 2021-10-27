@@ -1,0 +1,12 @@
+/*
+  ? Fazer ligação de chave primaria
+  ALTER TABLE <originTableName> 
+  ADD CONSTRAINT <setConstraintName>
+  FOREIGN KEY (<originKeyColumnName>) 
+  REFERENCES <destinyTableName> (<destinyKeyColumnName>)
+*/
+
+ALTER TABLE client 
+ADD CONSTRAINT foreing_type_client 
+FOREIGN KEY (i_type_client)
+REFERENCES typeClient (i_typeClient_typeClient);

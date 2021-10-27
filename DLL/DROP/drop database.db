@@ -1,0 +1,7 @@
+/*
+  ? Remover database
+  DROP DATABASE <databaseName>;
+*/
+
+DROP DATABASE cfbcursos;
+

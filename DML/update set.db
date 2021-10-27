@@ -1,0 +1,32 @@
+/*
+  ? Atualizar dados em uma coluna
+  UPDATE <tableName> 
+  SET <columnName>='Miguel Andrade' 
+  WHERE <condition>;
+*/
+
+
+UPDATE client 
+SET s_name_client='Miguel Andrade' 
+WHERE i_client_client=1;
+
+/*
+  Alterar dados de mais de uma coluna
+*/
+
+UPDATE client 
+SET 
+s_name_client='Miguel Andrade',
+s_cpf_client="01234567890"
+WHERE i_client_client=1;
+
+
+/*
+  Alterar todos os dados de uma coluna
+*/
+
+UPDATE client
+SET 
+s_name_client='Miguel Andrade',
+s_cpf_client="01234567890"
+WHERE i_client_client>0;

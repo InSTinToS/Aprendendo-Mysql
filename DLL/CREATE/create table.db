@@ -1,0 +1,13 @@
+/*
+  ? Criar tabela
+  CREATE TABLE <setTableName>(
+    <setColumnName> <setType> <setConstrains>
+  );
+*/
+
+CREATE TABLE client(
+  i_client_client INT PRIMARY KEY auto_increment,
+  s_name_client VARCHAR(50) NOT NULL,
+  s_cpf_client VARCHAR(11) NOT NULL,
+  d_birth_client DATETIME
+);

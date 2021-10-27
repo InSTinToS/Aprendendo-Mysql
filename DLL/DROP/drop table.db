@@ -1,0 +1,6 @@
+/*
+  ? Remover tabela
+  DROP TABLE <tableName>;
+*/
+
+DROP TABLE client;

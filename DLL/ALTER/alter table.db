@@ -1,0 +1,20 @@
+/*
+  ? Alterar restrições de uma coluna
+  ALTER TABLE <tableName> MODIFY COLUMN <columnName> <constrains>;  
+*/
+
+ALTER TABLE client MODIFY COLUMN s_name_client VARCHAR(30) NOT NULL;
+
+/*
+  ? Adicionar coluna
+  ALTER TABLE <tableName> ADD <setColumnName> <constrains>;
+*/
+
+ALTER TABLE client ADD i_type_client INT NOT NULL;
+
+/*
+  ? Remover coluna
+  ALTER TABLE <tableName> DROP <columnName>;
+*/
+
+ALTER TABLE client DROP i_type_client;

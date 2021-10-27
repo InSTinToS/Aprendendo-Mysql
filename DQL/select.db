@@ -1,0 +1,6 @@
+/*
+  ? Visualizar dados de uma tabela
+  SELECT * FROM <tableName>
+*/
+
+SELECT * FROM client
